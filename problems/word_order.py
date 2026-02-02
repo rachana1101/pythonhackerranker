@@ -27,7 +27,8 @@
 import sys
 
 def word_order(text): 
-    data = text.splitlines() 
+    data = text.splitlines() [1:]
+    
     word_dict = {}
     for word in data:
         if word in word_dict: 
