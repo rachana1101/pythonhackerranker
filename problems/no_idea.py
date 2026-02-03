@@ -34,13 +34,6 @@ def like_dislike(text):
     unlike_list_set = set(unlike_list)
 
     score = 0
-    # if (len(my_numbers)) != n1: 
-    #     score = 0
-    # if (len(data) != 4):
-    #     score = 0
-    # if (len(like_list) != n2 and len(unlike_list) != n2):
-    #     score = 0     
-
     for my_num in my_numbers: 
         if my_num in like_list_set:
             score = score + 1
