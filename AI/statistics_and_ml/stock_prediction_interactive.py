@@ -122,14 +122,14 @@ if __name__ == '__main__':
             line = input().strip()
             if not line:
                 break
-            amount_to_spend, num_of_stock_ticker, days_to_trade = map(int, line.split())
-        
+            m, k, d = map(float, line.split())
+            m, k, d = int(m), int(k), int(d)
             
             # Read k stock lines
             names = []
             owned_list = []
             prices_list = []
-            for _ in range(num_of_stock_ticker):
+            for _ in range(k):
                 line = input().strip().split()
                 names.append(line[0])
                 owned_list.append(int(line[1]))
